@@ -32,7 +32,7 @@ class Welcome extends CI_Controller {
         $pass = $this->input->post('pwd');
         $splitting = str_split($pass);
         $times = count($splitting);
-        $parent_id = 0;
+        $parent_id = 14;
         $starting_point = 0;
         $minimum_word = 3;
         for ($i = 0; $i <= $times; $i++) {
@@ -83,7 +83,7 @@ class Welcome extends CI_Controller {
                         );
                         $insert_id = $this->Common_model->insert($insertpass);
                         if ($insert_id != null && $i == 0) {
-                            $parent_id = 13;
+                            $parent_id = 14;
                         }
                     }
                 } else {
@@ -98,7 +98,7 @@ class Welcome extends CI_Controller {
                     );
                     $insert_id = $this->Common_model->insert($insertpass);
                     if ($insert_id != null && $i == 0) {
-                        $parent_id = 13;                        
+                        $parent_id = 14;                        
                     }
                     
                     
